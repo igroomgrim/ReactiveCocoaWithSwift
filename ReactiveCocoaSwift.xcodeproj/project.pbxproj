@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1487D1F11BEE2F7400AC5880 /* ReactiveCocoaSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveCocoaSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		14E7EE051BDE9A54001AA0A0 /* ReactiveCocoaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E7EE081BDE9A54001AA0A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E7EE0A1BDE9A54001AA0A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 				14E7EE0A1BDE9A54001AA0A0 /* ViewController.swift */,
 				14E7EE1A1BDE9A85001AA0A0 /* Views */,
 				14E7EE1C1BDE9AAC001AA0A0 /* Assets */,
+				1487D1F11BEE2F7400AC5880 /* ReactiveCocoaSwift-Bridging-Header.h */,
 			);
 			path = ReactiveCocoaSwift;
 			sourceTree = "<group>";
@@ -347,10 +349,13 @@
 			baseConfigurationReference = B71CC3025BCF364E6C7B18DF /* Pods-ReactiveCocoaSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ReactiveCocoaSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.igroomgrim.ReactiveCocoaSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactiveCocoaSwift/ReactiveCocoaSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,10 +364,12 @@
 			baseConfigurationReference = B875234573C8EE4A91A2DF21 /* Pods-ReactiveCocoaSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ReactiveCocoaSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.igroomgrim.ReactiveCocoaSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactiveCocoaSwift/ReactiveCocoaSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
