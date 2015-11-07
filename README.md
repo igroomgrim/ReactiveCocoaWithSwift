@@ -24,3 +24,20 @@ Ok don't waste time Let's get started !
   * The signal successfully terminated, No further events will be received.
 * Interrupted
   * Event production on the signal has been interrupted. No futher events will be received.
+  
+## Signals in Reactive Cocoa 3
+* Signals model an existing stream of events in your app.
+  * User input
+  * Notification
+  * Location updates
+
+## SignalProducer
+* SignalProducers model the results of some work.
+ * Network requests
+ * A model view
+ * A watch connectivity request
+
+## Errors
+* Errors are passes on to the next step in the stram.
+* If any point of the stream fails, we can handel this in one place.
+* Railway oriented programming.
