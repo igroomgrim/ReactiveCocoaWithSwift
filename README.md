@@ -14,3 +14,13 @@ Ok don't waste time Let's get started !
 * New video about Reactive Cocoa. 
 * Now You're Thinking with Signals!­ A Reactive Cocoa Adventure.<br />
 [![Now You're Thinking with Signals!­ A Reactive Cocoa Adventure](http://img.youtube.com/vi/kfUB8_GLh3c/0.jpg)](http://www.youtube.com/watch?v=kfUB8_GLh3c "Now You're Thinking with Signals!­ A Reactive Cocoa Adventure")
+
+## Events
+* Next(T)
+  * A value provided by the signal.
+* Error(E)
+  * The signal terminated because of an error. No further events will be received.
+* Completed
+  * The signal successfully terminated, No further events will be received.
+* Interrupted
+  * Event production on the signal has been interrupted. No futher events will be received.
