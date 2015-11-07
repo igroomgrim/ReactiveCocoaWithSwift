@@ -9,3 +9,8 @@ Ok don't waste time Let's get started !
 ## Tutorial
 * [The Definitive Introduction: Part 1/2](http://www.raywenderlich.com/62699/reactivecocoa-tutorial-pt1) 
 * [The Definitive Introduction: Part 2/2](http://www.raywenderlich.com/62796/reactivecocoa-tutorial-pt2) 
+
+## /dev/world/2015
+* New video about Reactive Cocoa. 
+* Now You're Thinking with Signals!­ A Reactive Cocoa Adventure.<br />
+[![Now You're Thinking with Signals!­ A Reactive Cocoa Adventure](http://img.youtube.com/vi/kfUB8_GLh3c/0.jpg)](http://www.youtube.com/watch?v=kfUB8_GLh3c "Now You're Thinking with Signals!­ A Reactive Cocoa Adventure")
