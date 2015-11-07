@@ -46,3 +46,12 @@ Ok don't waste time Let's get started !
 * Less code.
 * Maintainable code.
 * Readable code.
+
+## Play Time!
+* Try to get signal from UITextField by rac_textSignal, So nice! now we don't need UITextField Delegate becuase we have a useful signal.
+```swift
+let searchTextSignal = searchTextField.rac_textSignal()
+searchTextSignal.toSignalProducer().map({ text in text as! String }).startWithNext { text in
+  print("search text : \(text)")
+}
+```
