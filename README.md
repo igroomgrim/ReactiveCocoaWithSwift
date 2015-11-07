@@ -41,3 +41,8 @@ Ok don't waste time Let's get started !
 * Errors are passes on to the next step in the stram.
 * If any point of the stream fails, we can handel this in one place.
 * Railway oriented programming.
+
+## What has this given us?
+* Less code.
+* Maintainable code.
+* Readable code.
