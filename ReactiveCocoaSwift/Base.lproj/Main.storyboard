@@ -23,6 +23,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zch-Uf-TJh">
+                                <rect key="frame" x="260" y="536" width="81" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.37647058820000001" green="0.75294117650000003" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9j7-PO-e43"/>
+                                    <constraint firstAttribute="width" constant="81" id="V4U-kx-oSn"/>
+                                </constraints>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -30,9 +42,12 @@
                             <constraint firstAttribute="trailing" secondItem="LXW-QJ-kZ5" secondAttribute="trailing" constant="20" id="1M5-G8-MAA"/>
                             <constraint firstItem="LXW-QJ-kZ5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BGF-If-TQj"/>
                             <constraint firstItem="LXW-QJ-kZ5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Nyi-9s-UkV"/>
+                            <constraint firstItem="Zch-Uf-TJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="as4-W4-xBW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zch-Uf-TJh" secondAttribute="bottom" constant="20" id="bAn-dc-b3L"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchButton" destination="Zch-Uf-TJh" id="vny-kd-GKp"/>
                         <outlet property="searchTextField" destination="LXW-QJ-kZ5" id="nAj-2l-30z"/>
                     </connections>
                 </viewController>
