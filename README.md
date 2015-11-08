@@ -55,3 +55,16 @@ searchTextSignal.toSignalProducer().map({ text in text as! String }).startWithNe
   print("search text : \(text)")
 }
 ```
+* Try to add filter operator is used to only include values in an event stream that satisfy a predicate.
+* In this case i'm try is search string has more than 3 character, filter operator will alow and go to startWithNext
+```swift
+searchTextSignal.toSignalProducer()
+            .map({ text in text as! String })
+            .filter({ searchChar in searchChar.characters.count > 3 })
+            .startWithNext { text in
+            print("search text : \(text)")
+        }
+```
+* [Reference : Basic Operator(filter)](https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/Documentation/BasicOperators.md#filtering)
+* [Interactive diagrams of Rx Observables(filter)](http://rxmarbles.com/#filter)
+* [MVVM, ReactiveCocoa and Swift](http://blog.scottlogic.com/2014/07/24/mvvm-reactivecocoa-swift.html)
