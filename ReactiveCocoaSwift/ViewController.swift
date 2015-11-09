@@ -29,6 +29,17 @@ class ViewController: UIViewController {
             .startWithNext { text in
             print("search text : \(text)")
         }
+        
+        let searchButtonSignal = searchButton.rac_signalForControlEvents(UIControlEvents.TouchUpInside)
+        searchButtonSignal.doNext( { _ in
+                self.searchButton.enabled = false
+                self.searchButton.alpha = 0.5
+                self.searchTextField.enabled = false
+            } )
+            .subscribeNext {
+            _ in
+            print("searchButton pressed!")
+        }
     }
 
     override func didReceiveMemoryWarning() {
