@@ -68,3 +68,17 @@ searchTextSignal.toSignalProducer()
 * [Reference : Basic Operator(filter)](https://github.com/ReactiveCocoa/ReactiveCocoa/blob/master/Documentation/BasicOperators.md#filtering)
 * [Interactive diagrams of Rx Observables(filter)](http://rxmarbles.com/#filter)
 * [MVVM, ReactiveCocoa and Swift](http://blog.scottlogic.com/2014/07/24/mvvm-reactivecocoa-swift.html)
+
+* Try to add methods from ReactiveCocoa adds to UIKit, rac_signalForControlEvents.
+* And add some feature with doNext operator, like when user pressed UIButton button will disable and change alpha.
+```swift
+let searchButtonSignal = searchButton.rac_signalForControlEvents(UIControlEvents.TouchUpInside)
+    searchButtonSignal.doNext( { _ in
+       self.searchButton.enabled = false
+       self.searchButton.alpha = 0.5
+       self.searchTextField.enabled = false
+    } )
+    .subscribeNext { _ in
+       print("searchButton pressed!")
+    }
+```
