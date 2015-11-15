@@ -3,6 +3,9 @@
 This week i found alot of detail about Reactive Cocoa. I would to present this video if you are beginner like me haha. This video is stream on 2014 but it very useful for beginner like me. 
 Ok don't waste time Let's get started !
 
+## Why ReactiveCocoa ?
+* [WHY ?](http://www.sprynthesis.com/2014/06/15/why-reactivecocoa/)
+
 ## (Ray Wenderlich)April 2014 Tech Talk: Reactive Cocoa 
 [![April 2014 Tech Talk: Reactive Cocoa](http://img.youtube.com/vi/fWV7xyN5CR8/0.jpg)](http://www.youtube.com/watch?v=fWV7xyN5CR8 "April 2014 Tech Talk: Reactive Cocoa")
 
